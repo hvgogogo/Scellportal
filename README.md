@@ -14,13 +14,15 @@ A comprehensive R package for single-cell RNA-seq data analysis, visualization, 
 ## Installation
 
 ```r
-# Install from GitHub
-devtools::install_github("yourusername/ScellPortal")
+# Install dependencies
+source("setup_scellportal.R")
 
-# Or clone and install locally
-git clone https://github.com/yourusername/ScellPortal.git
-cd ScellPortal
-R CMD INSTALL .
+# Install from GitHub
+devtools::install_github("hvgogogo/ScellPortal")
+
+# Quick start
+library(ScellPortal)
+results <- scellportal_workflow(your_seurat_object)
 ```
 
 ### Dependencies
@@ -240,7 +242,7 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 ### Development Setup
 
 ```bash
-git clone https://github.com/yourusername/ScellPortal.git
+git clone https://github.com/hvgogogo/ScellPortal.git
 cd ScellPortal
 R -e "devtools::load_all(); devtools::check()"
 ```
@@ -254,7 +256,7 @@ If you use ScellPortal in your research, please cite:
   title = {ScellPortal: Single-cell RNA-seq Analysis Toolkit},
   author = {Your Name},
   year = {2025},
-  url = {https://github.com/yourusername/ScellPortal}
+  url = {https://github.com/hvgogogo/ScellPortal}
 }
 ```
 
@@ -266,7 +268,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Author**: Your Name
 - **Email**: your.email@institution.edu
-- **GitHub**: [@yourusername](https://github.com/yourusername)
+- **GitHub**: [@hvgogogo](https://github.com/hvgogogo)
 
 ## Acknowledgments
 
